@@ -1,0 +1,73 @@
+html{
+    height: 100%;
+}
+body{
+    background-image: url(../../img/back2.svg);
+    font-family: 'Poppins', sans-serif;
+    min-height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#title{
+    text-align: center;
+}
+.table-container{
+    background-color: white;
+    box-shadow: 20px -20px 0px 0 black;
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    min-width: 500px;
+    min-height: 580px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background-color 1s ease, box-shadow 1s ease, color 1s ease;
+}
+
+.table-container:hover{
+    background-color: black;
+    box-shadow: 20px -20px 0px 0 white;
+    color: white;
+
+}
+
+td:nth-child(odd){
+    width: 120px;
+}
+tr{
+    height: 40px;
+}
+
+input:not(.rad){
+    height:25px;
+    background-color: rgb(255, 255, 255, 0.8);
+    font-weight: bold;
+}
+
+input[type="submit"], input[type="reset"]{
+    width: 120px;
+    height: 30px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: background-color 0.3s ease-in, box-shadow 0.5s ease;
+}
+input[type="submit"]:hover, input[type="reset"]:hover{
+    background-color: black;
+    box-shadow: 5px -5px 0px 0 white;
+    color: white;
+}
+
+textarea{
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255, 0.8);
+    color: #2f0052;
+    font-weight: bold;
+    width: 260px;
+}
+a{
+    color: white;
+}
