@@ -1,0 +1,50 @@
+html{
+    height: 100%;
+}
+body{
+    background-image: url(../../img/back.svg);
+    font-family: 'Poppins', sans-serif;
+    min-height: 90%;
+}
+.container{
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#textBox{
+    width: 700px;
+    min-height: 500px;
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+p{
+    font-weight: 600;
+}
+button{
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transition: transform .3s ease-in-out;
+}
+button:hover{
+    transform: scale(1.2);
+}
