@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanks for submission</title>
+</head>
+<body>
+    <b>Welcome <span id="user"></span></b>
+
+    <script>
+        const url = window.location.href;
+        const regex = /[?&]username=([^&]*)/;
+        const match = url.match(regex);
+        document.getElementById("user").innerHTML=match[1].toUpperCase();
+    </script>
+</body>
+</html>

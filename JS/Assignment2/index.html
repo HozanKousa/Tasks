@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styls.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="formContainer">
+        <form action="thanks.html" method="get" target="_blank" name="myForm" onsubmit="checkFrm(event)">
+            <input type="text" value="Enter your user name here" onfocus="clearMe(this)" name="username" >
+            <input type="password" name="password"><br>
+            <input type="checkbox" id="check"><label for="check"><a href="terms.html" target="_blank">I agree to Terms and condition</a></label>
+            <br>
+            <input type="submit" value="Login">
+        </form>
+        
+    </div>
+    <button onclick="openAdvertising()">Open Ad</button>
+    <button onclick="closeAdvertising()">Close Ad</button><br>
+    <span id="gradTime" style="font-size: 25px;"></span>
+    <h2 style="text-align: center;"><a href="https://github.com/HozanKousa/Tasks/tree/main/JS/Assignment2" style="color:white; font-weight: 300;">View Source Code</a></h2>
+    <script src="app.js"></script>
+</body>
+</html>
